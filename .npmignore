@@ -1,0 +1,7 @@
+tsconfig.json
+tslint.json
+.eslintrc.js
+.prettierrc
+.idea
+.npmrc
+coverage
