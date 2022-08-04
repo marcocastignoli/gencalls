@@ -1,6 +1,6 @@
 {
   "name": "gencalls",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "How many times you wrote *ethers* or *web3* calls? [Typechain](https://github.com/dethcrypto/TypeChain) is a beautiful solution, but its only inputs are local files ([eth-sdk](https://github.com/dethcrypto/eth-sdk) exists but it only supports Etherscan), also writing new targets is difficult because *typechain* doesn't use a template engine.",
   "main": "index.js",
   "types": "lib/index.d.ts",
