@@ -1,0 +1,54 @@
+{
+  "name": "gencalls",
+  "version": "1.0.0",
+  "description": "How many times you wrote *ethers* or *web3* calls? [Typechain](https://github.com/dethcrypto/TypeChain) is a beautiful solution, but its only inputs are local files ([eth-sdk](https://github.com/dethcrypto/eth-sdk) exists but it only supports Etherscan), also writing new targets is difficult because *typechain* doesn't use a template engine.",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts ..",
+    "build": "tsc && npm run copypackage",
+    "build:watch": "tsc -w",
+    "test": "jest test --runInBand --coverage",
+    "copypackage": "cp -rf package.json lib",
+    "link": "cd lib && npm link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcocastignoli/gencalls.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "/**/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcocastignoli/gencalls/issues"
+  },
+  "homepage": "https://github.com/marcocastignoli/gencalls#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bs58": "^5.0.0",
+    "cbor-x": "^1.3.3",
+    "ethers": "^5.6.5"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/jest": "^27.4.1",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-tsdoc": "^0.2.16",
+    "jest": "27.0.0",
+    "jest-junit": "13.2.0",
+    "jest-transform-stealthy-require": "1.0.0",
+    "prettier": "^2.6.1",
+    "ts-jest": "27.1.4",
+    "typescript": "^4.5.4"
+  }
+}
